@@ -44,24 +44,44 @@ img {
   position: absolute;
   left: 1rem;
   bottom: 0%;
-  width: 64%;
-  height: 40%;
+  width: 68%;
+  height: 42%;
 }
-.wharf-overlay:hover ~ .wharf-content {
+.tkts-overlay {
+  background: rgba(66, 193, 87, 0.4);
+  display: block;
+  position: absolute;
+  left: calc(1rem + 35%);
+  top: 40%;
+  width: 15%;
+  height: 18%;
+}
+.wharf-overlay:hover ~ .wharf-content,
+.tkts-overlay:hover ~ .tkts-content {
   display: block;
 }
-.wharf-content {
+
+.wharf-content,
+.tkts-content {
+  display: none;
   position: absolute;
   width: 62%;
   /* max-width: 720px; */
   left: 100%;
   top: 0;
 }
+h2,
 h3 {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
   margin-bottom: 0;
+}
+h2 {
   font-size: 1.5rem;
+  color: white;
+}
+h3 {
+  font-size: 1.25rem;
   color: orangered;
 }
 h5 {
